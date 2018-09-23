@@ -3,75 +3,122 @@
 }
 
 .App-logo {
-  height: 80px;
-  margin-bottom: 15px;
+  height: 4em;
+  margin-bottom: 1em;
 }
 
 .App-header {
   background-color: rgba(28, 39, 49, 0.733);
-  height: 150px;
+  height: 20vh;
   padding: 20px;
   color: white;
 }
 
 .App-title {
-  /* font-size: 1.5em; */
+  font-size: 3.5em;
   font-family: 'Monoton', cursive;
-  background: red;
-  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 5vw;
+  color: aqua;
+  
+  /* font-size: 5vw; */
 }
 
 .NavBar {
   width: 100 vw;
   height: 10vh;
-  background-color: rgb(73, 188, 223);
+  background-color: rgba(224, 107, 11, 0.794);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.SearchBar {
-  width: 50vw;
-  height: 25px;
-  
+.GenerateApplicantsButton {
+  background-color: rgb(19, 147, 170); /* Green */
+    border: none;
+    box-shadow: 2.5px 3px #88888880;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-self: center;
 }
 
-.SearchButton {
-  width: 40px;
-  height: 30px;
-}
-
-main {
+.ApplicantContainer{
+  background-color: whitesmoke;
+  height: 60vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Applicant {
+  width: 20vw;
+  height: 40vh;
+  margin: 20px;
+  box-shadow: 5px 6px #88888834;
+  background-color: rgb(245, 237, 237);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hireButton {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.EmployeeContainer {
+  background-color: whitesmoke;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+h2 {
+  padding: 15px;
+  background-color: rgba(28, 39, 49, 0.733);
+  color: aqua;
+  font-size: 2.5em;
+  font-family: 'Monoton', cursive;}
+
+.Employees {
+  width: 50vw;
+  height: 40vh;
+  margin: auto;
+  background-color: rgb(245, 237, 237);
+  box-shadow: 5px 6px #88888834;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.fireButton {
+    background-color: rgb(182, 12, 12); /* Green */
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 
 
-.UserReviewBox {
-  width: 40vw;
-	height: 40vw;
-	border: 3px solid #cccccc;
-	padding: 5px;
-  font-family: Tahoma, sans-serif;
-  overflow: auto;
-}
 
-.CriticReviewBox {
-  width: 40vw;
-	height: 40vw;
-	border: 3px solid #cccccc;
-	padding: 5px;
-  font-family: Tahoma, sans-serif;
-  overflow: scroll;
-}
 
 
