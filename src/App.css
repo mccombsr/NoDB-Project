@@ -32,7 +32,7 @@
 }
 
 .GenerateApplicantsButton {
-  background-color: rgb(19, 147, 170); /* Green */
+  background-color: rgb(19, 147, 170); 
     border: none;
     box-shadow: 2.5px 3px #88888880;
     color: white;
@@ -61,19 +61,38 @@
   box-shadow: 5px 6px #88888834;
   background-color: rgb(245, 237, 237);
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  /* align-items: flex-end; */
+}
+
+.thumbnail {
+  width: 40%;
+  height: 60%;
+  border-radius: 50%;
+  margin: auto;
+  background-color: blue;
+  align-self: center;
+}
+
+.applicantName {
+  width: 100%;
+  height: 10%;
+  background-color: rgba(28, 39, 49, 0.733);
+  color: aqua;
+  align-self: center;
 }
 
 .hireButton {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; 
     color: white;
     border: none;
     margin-bottom: 10px;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
+    align-self: center;
     font-size: 16px;
 }
 
@@ -87,7 +106,7 @@
   flex-wrap: wrap;
 }
 
-h2 {
+.employeesTitle {
   padding: 15px;
   background-color: rgba(28, 39, 49, 0.733);
   color: aqua;
@@ -106,7 +125,7 @@ h2 {
 }
 
 .fireButton {
-    background-color: rgb(182, 12, 12); /* Green */
+    background-color: rgb(182, 12, 12); 
     color: white;
     border: none;
     margin-bottom: 10px;

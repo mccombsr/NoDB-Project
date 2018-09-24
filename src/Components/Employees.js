@@ -22,7 +22,7 @@ class Employees extends Component {
     render() {
         return (
             <div>
-                <h2>CURRENT EMPLOYEES</h2>
+                <h2 className='employeesTitle'>CURRENT EMPLOYEES</h2>
                 <div className="Employees">
                     <button className="fireButton"
                         onClick={this.hireOnClick}
