@@ -1,43 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../reset.css';
 import '../App.css';
 import axios from 'axios';
 
 
-class Applicants extends Component {
-    constructor() {
-        super();
-
-        this.state = {
-            employees: []
-        }
-    }
-
-    componentDidMount() {
-        axios.get(``)
-    }
+function Applicants(props) {
+    
 
 
-    hireOnClick(event) {
-        this.setState({ employees: event.target.value })
-    }
 
-    render() {
-        console.log(this.props)
-        return (
-            <div>
+console.log(props)
+return (
+    <div>
                 <div className="Applicant">
-                <h2 className='applicantName'>{this.props.applicant.name?this.props.applicant.name.first.toUpperCase() : null}
-                 {this.props.applicant.name ? " " + this.props.applicant.name.last.toUpperCase() : null}
+                <h2 className='applicantName'>{props.applicant.name?props.applicant.name.first.toUpperCase() : null}
+                 {props.applicant.name ? " " + props.applicant.name.last.toUpperCase() : null}
                 </h2>
-                <img className='thumbnail' src={this.props.applicant.picture?this.props.applicant.picture.thumbnail : null}/>
+                <img className='thumbnail' src={props.applicant.picture?props.applicant.picture.large : null}/>
                     <button className="hireButton"
-                        onClick={this.hireOnClick}
-                    >Hire</button>
+                        onClick={() => props.addEmployee(props.applicant)}
+                        >Hire</button>
                 </div>
             </div>
         );
+        
+        
     }
-}
 
 export default Applicants;

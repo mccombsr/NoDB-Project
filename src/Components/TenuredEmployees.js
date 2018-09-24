@@ -1,29 +1,25 @@
 import React, { Component } from 'react';
 import '../reset.css';
 import '../App.css';
-import axios from 'axios';
 
 
-class Employees extends Component {
+class TenuredEmployees extends Component {
     constructor() {
         super();
 
     }
-
 
     render() {
         return (
             <div>
                 <h2 className='employeesTitle'>CURRENT EMPLOYEES</h2>
                 <div className="Employees">
+                    <h1>Tenured Employees</h1>
                     <h2>
-                        {/* {this.props.employees[0] && this.props.employees.map((employee) => <img src={employee.picture.large} />)} */}
-                        {this.props.employees[0] && this.props.employees.map((employee) =>
+                        {this.props.tenuredEmployees[0] && this.props.tenuredEmployees.map((employee) =>
                             <div>
                                 <img src={employee.picture.large} />
                                 {employee.name.first.toUpperCase() + " " + employee.name.last.toUpperCase()}
-                                <button className="fireButton" onClick={this.props.fire}>Fire</button>
-                                <button className="tenureButton" onClick={this.props.tenure}>Tenure</button>
                             </div>)}
                     </h2>
                 </div>
@@ -33,4 +29,4 @@ class Employees extends Component {
     }
 }
 
-export default Employees;
+export default TenuredEmployees;
